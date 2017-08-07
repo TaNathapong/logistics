@@ -32,15 +32,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         controller: 'AppCtrl'
     })
 
-    .state('app.search', {
-        url: '/search',
-        views: {
-            'menuContent': {
-                templateUrl: 'templates/search.html'
-            }
-        }
-    })
-
     .state('app.dashboard', {
         url: '/dashboard',
         views: {
@@ -49,30 +40,27 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             }
         }
     })
-    .state('app.browse', {
-        url: '/browse',
+    .state('app.status', {
+        url: '/status',
         views: {
             'menuContent': {
-                templateUrl: 'templates/browse.html'
+                templateUrl: 'templates/status.html'
             }
         }
     })
-    .state('app.playlists', {
-        url: '/playlists',
+    .state('app.loc_select', {
+        url: '/loc_select',
         views: {
             'menuContent': {
-                templateUrl: 'templates/playlists.html',
-                controller: 'PlaylistsCtrl'
+                templateUrl: 'templates/loc_select.html'
             }
         }
     })
-
-    .state('app.single', {
-        url: '/playlists/:playlistId',
+    .state('app.loc_accept', {
+        url: '/loc_accept',
         views: {
             'menuContent': {
-                templateUrl: 'templates/playlist.html',
-                controller: 'PlaylistCtrl'
+                templateUrl: 'templates/loc_accept.html'
             }
         }
     });
